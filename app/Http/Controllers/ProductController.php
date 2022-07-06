@@ -47,9 +47,9 @@ class ProductController extends Controller
      
     }
 
-    public function edit($id){
+    public function edit($id,$kategori_id){
         $produk = Produk::getIdProduk($id); 
-        $kategori = Kategori::all();
+        $kategori = Kategori::where('id', 'not like', $kategori_id)->get();
     	return view('editproduk',['produk' => $produk], ['kategori' => $kategori]);
     }
 

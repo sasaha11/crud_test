@@ -44,7 +44,7 @@
                         <td>{{$tp->produk}}</td>
                         <td>{{$tp->kategori}}</td>
                         <td>{{$tp->stok}}</td>
-                        <td><a href="/produk/edit/{{$tp->id}}"><button type="button" class="btn btn-primary">Edit</button></a><a href="produk/delete/{{$tp->id}}"><button type="button" class="btn btn-primary">Hapus</button></a></td>
+                        <td><a href="/produk/edit/{{$tp->id}}/update/{{$tp->kategori_id}}"><button type="button" class="btn btn-primary">Edit</button></a><a href="produk/delete/{{$tp->id}}"><button type="button" class="btn btn-primary">Hapus</button></a></td>
                       </tr>   
                       @endforeach
                     </tbody>

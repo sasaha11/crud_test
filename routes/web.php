@@ -22,7 +22,7 @@ Route::get('/', function () {
 //CRUD produk
 Route::get('/produk','App\Http\Controllers\ProductController@index');
 Route::get('/produk/tambah','App\Http\Controllers\ProductController@tambah');
-Route::get('/produk/edit/{id}','App\Http\Controllers\ProductController@edit');
+Route::get('/produk/edit/{id}/update/{kategori_id}','App\Http\Controllers\ProductController@edit');
 Route::post('/produk/buat','App\Http\Controllers\ProductController@buat');
 Route::post('/produk/update','App\Http\Controllers\ProductController@update');
 Route::get('/produk/delete/{id}','App\Http\Controllers\ProductController@delete');
