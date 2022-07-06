@@ -20,6 +20,11 @@
       </li>
     </ul>
 <h1 class="text-center"> List Produk</h1>
+@if (session('status'))
+              <div class="alert alert-success">
+                  {{ session('status') }}
+            </div>
+              @endif
             <div class="jumbotron-fluid d-flex justify-content-center">
               
                 <div class="container-fluid">
@@ -37,7 +42,7 @@
                       <tr>
                         <td>{{$tp->id}}</td>
                         <td>{{$tp->produk}}</td>
-                        <td>{{$tp->kategori_id}}</td>
+                        <td>{{$tp->kategori}}</td>
                         <td>{{$tp->stok}}</td>
                         <td><a href="/produk/edit/{{$tp->id}}"><button type="button" class="btn btn-primary">Edit</button></a><a href="produk/delete/{{$tp->id}}"><button type="button" class="btn btn-primary">Hapus</button></a></td>
                       </tr>   

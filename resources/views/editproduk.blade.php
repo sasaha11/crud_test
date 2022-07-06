@@ -32,9 +32,9 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Kategori</label>
                     <select class="form-control" name="kategori_p" id="exampleFormControlSelect1">
-                        <option>{{$tp->kategori_id}}</option>
+                      <option value="{{$tp->kategori_id}}">{{$tp->kategori}}</option>
                         @foreach ($kategori as $kt)
-                      <option>{{$kt->id}}</option>
+                        <option value="{{$kt->id}}">{{$kt->kategori}}</option>
                       @endforeach
                     </select>
                   </div>
@@ -43,7 +43,6 @@
               </form>
         </div>
     </div>
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

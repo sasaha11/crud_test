@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('kategori_id');        
             $table->string('stok');
             $table->foreign('kategori_id')->references('id')->on('tabel_kategori');
+            $table->timestamps();
         });
     }
 

@@ -27,7 +27,7 @@
                     <label for="kategori_id">Kategori</label>
                     <select class="form-control" id="kategori_p" name="kategori_p">
                         @foreach ($kategori as $k)
-                            <option>{{$k->id}}</option>
+                            <option value="{{$k->id}}">{{$k->kategori}}</option>
                         @endforeach
                     </select>
                   </div>
